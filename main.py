@@ -6,7 +6,9 @@ import mediapipe as mp
 import cv2
 from my_functions import *
 import keyboard
-from tensorflow.keras.models import load_model
+# from tensorflow.keras.models import load_model
+# NOTE : Workaround for Pycharm using miniconda python 3.10
+from keras.api.models import load_model
 import language_tool_python
 
 # Set the path to the data directory

@@ -5,9 +5,15 @@ import os
 from sklearn.model_selection import train_test_split
 from itertools import product
 from sklearn import metrics
+
 from tensorflow.keras.layers import LSTM, Dense, Dropout
-from tensorflow.keras.models import Sequential, load_model
-from tensorflow.keras.utils import to_categorical
+# from tensorflow.keras.models import Sequential, load_model
+# from tensorflow.keras.utils import to_categorical
+# NOTE : Workaround for Pycharm using miniconda python 3.10
+from keras.api.models import Sequential, load_model
+from keras.api.utils import to_categorical
+
+
 
 
 # Set the path to the data directory
